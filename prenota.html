@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenota un Tavolo | Ristorante Amici</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo"><img src="images/loghi/black logo 3 png.png" alt="Amici" style="height: 40px; vertical-align: middle;"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.canva.com/design/DAGjaXifrOU/3WOkJzTEKPXXySgyG74XMw/view?utm_content=DAGjaXifrOU" target="_blank">Menù</a></li>
+                <li><a href="chi-siamo.html">Chi Siamo</a></li>
+                <li><a href="prenota.html" class="nav-btn" style="background-color:#4EA3B8;">Prenota</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Prenota il Tuo Tavolo</h1>
+    </div>
+
+    <section id="reservation" class="container reveal">
+        <div class="ordering-guide">
+            <h2>Riserva un posto per te e i tuoi amici</h2>
+            <p>Per garantirvi il miglior servizio possibile, accettiamo le prenotazioni esclusivamente per via telefonica o WhatsApp.</p>
+            
+            <div class="cards-grid" style="grid-template-columns: 1fr; max-width: 500px; margin: 0 auto;">
+                <div class="card" style="padding: 60px 40px; cursor: pointer;" onclick="window.location.href='tel:+393331234567'">
+                    <div class="card-icon" style="background-color: var(--secondary-color);">📞</div>
+                    <h3>Chiama e Prenota</h3>
+                    <p style="text-align: center; font-size: 1.2rem; margin-top: 20px;">
+                        Comunica orario e numero di persone chiamando il:<br><br>
+                        <strong style="font-size: 2.2rem; color: var(--primary-color);">333 123 4567</strong><br><br>
+                        <span style="font-size: 1rem;">O invia un messaggio su WhatsApp.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="container reveal">
+        <h2>Dove Ci Trovi</h2>
+        <div class="map-container">
+            <!-- Embedding Google Maps Interactive -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2798.117282717942!2d9.186636315849893!3d45.46744047910076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c149eb5e4a7b%3A0x6bfa0995addfdd73!2sPiazza%20del%20Duomo%2C%20Milano%20MI!5e0!3m2!1sit!2sit!4v1699999999999!5m2!1sit!2sit" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <a href="https://www.instagram.com/amici.mp?igsh=YTl6aDZ6dGxybThp" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; width: 45px; height: 45px; background-color: var(--primary-color); color: white; border-radius: 50%; margin-bottom: 15px; transition: transform 0.3s, background-color 0.3s; text-decoration: none;" onmouseover="this.style.transform='scale(1.1)'; this.style.backgroundColor='#4EA3B8';" onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='var(--primary-color)';">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <p>&copy; 2026 Ristorante Amici. Creato con passione.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
